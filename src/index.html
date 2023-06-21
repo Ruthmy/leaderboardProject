@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Leaderboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Leaderboard</h1>
+    </header>
+    <main>
+        <section class="scoreboard">
+            <div class="table-title">
+                <h2>RecentScores</h2>
+                <button type="button" class="refresh">Refresh</button>
+            </div>
+            <div class="gray-line"></div>
+            <!-- scorecard -->
+            <table>
+                <tbody colspan="3">
+                </tbody>
+            </table>
+            <div class="scorecard">
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section class="form">
+            <div class="table-title">
+                <h2>Scores</h2>
+            </div>
+            <div class="gray-line"></div>
+            <form class="add-form">
+                <label for="name">Name:
+                    <input type="text" name="name" id="name" placeholder="Enter the name">
+                </label>
+                <label for="score">Score:
+                    <input type="number" name="score" id="score" placeholder="Enter the score">
+                </label>
+                <button type="button" class="add-button">Add</button>
+                <div id="error"></div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
