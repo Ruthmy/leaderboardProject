@@ -1,0 +1,181 @@
+/* Global Styles */
+
+:root {
+  /* Set your variables here */
+  --font: 'Montserrat', sans-serif;
+  --background: #e8e8e8;
+  --board-background: #fff;
+  --button: #36b37f;
+  --row: #dbdde7;
+  --text: #30343b;
+  --error: #ff6163;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red !important; */
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--font);
+  background-color: var(--background);
+  width: 100vw;
+  height: 100vh;
+  padding: 5vh;
+  gap: 3vh;
+}
+
+header,
+.scoreboard,
+.form,
+.table-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+/* Text Styles */
+
+button,
+input {
+  font-family: var(--font);
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p,
+label {
+  font-size: 1.6rem;
+}
+
+.gray-line {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: gray;
+}
+
+/* Sections */
+
+header {
+  width: 100%;
+  height: 6rem;
+  font-family: var(--font);
+  background-color: var(--background);
+}
+
+.scoreboard,
+.form {
+  width: 40%;
+  height: auto;
+  flex-direction: column;
+  background-color: var(--board-background);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-title {
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+button {
+  height: 4rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+button.refresh {
+  width: auto;
+  background-color: var(--button);
+}
+
+button.add-button {
+  width: 100%;
+  background-color: var(--button);
+}
+
+/* Scoreboard Styles */
+
+table,
+thead,
+tbody {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+tr:nth-child(even) {
+  background-color: var(--row);
+}
+
+/* Form section styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2vh 2vh 0 2vh;
+}
+
+form input {
+  width: 100%;
+  padding: 0.9rem 1.5rem 0.9rem 0.9rem;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #949494;
+}
+
+/* Display error */
+
+#error {
+  font-weight: 500;
+  color: var(--error);
+  padding-top: 1rem;
+  align-self: flex-end;
+}
