@@ -181,7 +181,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project and know someone who might find it helpful, please share it.
-If you liked the original design that inspired this project, I recommend you [visit Cindy Shin's Behance post](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). and follow her on Behance to support her work.
+Or give it a **star** ⭐️
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
