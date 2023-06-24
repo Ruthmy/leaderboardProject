@@ -22,43 +22,57 @@ const addScore = () => {
   const nameInput = document.querySelector('#name').value;
   const scoreInput = document.querySelector('#score').value;
 
-  if (nameInput && scoreInput && scoreInput !== 0 && scoreInput > 0) {
-    // Save the data into the API
-    const myHeaders = new Headers();
-    myHeaders.append('Content-Type', 'application/json');
-
-    const raw = JSON.stringify({
-      user: nameInput,
-      score: parseInt(scoreInput, 10),
-    });
-
-    const requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow',
-    };
-
-    fetch(`${urlAPI}${idAPI}/scores/`, requestOptions)
-      .then((response) => response.text())
-      .catch((error) => error);
-
-    // Reset the form and reload the page
-    setTimeout(() => {
-      document.querySelector('.add-form').reset();
-      window.location.reload();
-    }, 2000);
-  } else if (scoreInput === 0 || scoreInput < 0) {
-    errorElement.innerHTML = '<p>Score must be greater than 0</p>';
-    setTimeout(() => {
-      errorElement.innerHTML = '';
-    }, 3000);
-  } else {
+  // nameInput and scoreInput are not empty
+  if (!nameInput || !scoreInput) {
     errorElement.innerHTML = '<p>Please fill all the fields</p>';
     setTimeout(() => {
       errorElement.innerHTML = '';
     }, 3000);
+    return;
   }
+
+  // nameInput is not a number
+  if (Number(nameInput) || nameInput === 0 || nameInput === '0') {
+    errorElement.innerHTML = '<p>The name field cannot be a number</p>';
+    setTimeout(() => {
+      errorElement.innerHTML = '';
+    }, 3000);
+    return;
+  }
+
+  // scoreInput is greater than 0
+  if (scoreInput === 0 || scoreInput === '0' || scoreInput < 0) {
+    errorElement.innerHTML = '<p>Score must be greater than 0</p>';
+    setTimeout(() => {
+      errorElement.innerHTML = '';
+    }, 3000);
+    return;
+  }
+
+  // Save the data into the API
+  const myHeaders = new Headers();
+  myHeaders.append('Content-Type', 'application/json');
+
+  const raw = JSON.stringify({
+    user: nameInput,
+    score: parseInt(scoreInput, 10),
+  });
+
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  };
+
+  fetch(`${urlAPI}${idAPI}/scores/`, requestOptions)
+    .then((response) => response.text())
+    .catch((error) => error);
+
+  // Reset the form and reload the page
+  setTimeout(() => {
+    refreshScores();
+  }, 1000);
 };
 
 addButton.addEventListener('click', addScore);
