@@ -12,7 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -84,12 +84,12 @@
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!--
-## 🚀 Live Demo <a name="live-demo"></a>
-<br>-->
 
-<!-- [![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/eff934abb4734706b04b3651f8e76e87-with-play.gif)](https://www.loom.com/share/eff934abb4734706b04b3651f8e76e87)
-- [Live Demo Link](https://ruthmy.github.io/Leaderboard/dist/index.html)-->
+## 🚀 Live Demo <a name="live-demo"></a>
+<br>
+
+<!-- [![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/eff934abb4734706b04b3651f8e76e87-with-play.gif)](https://www.loom.com/share/eff934abb4734706b04b3651f8e76e87)-->
+- [Live Demo Link](https://ruthmy.github.io/Leaderboard/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
