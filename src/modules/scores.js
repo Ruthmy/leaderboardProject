@@ -5,7 +5,7 @@ const errorElement = document.getElementById('error');
 
 // API elements for Kawaii World game ---------------------------------------------------------
 const urlAPI = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const idAPI = 'a3tc8eSRVHEFLAZFTCqq';
+const idAPI = 'FM0HI4WbLganPeJuk0Jf';
 
 // Buttons functionality ----------------------------------------------------------------------
 
