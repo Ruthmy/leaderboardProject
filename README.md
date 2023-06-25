@@ -89,7 +89,7 @@
 <br>
 
 <!-- [![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/eff934abb4734706b04b3651f8e76e87-with-play.gif)](https://www.loom.com/share/eff934abb4734706b04b3651f8e76e87)-->
-- [Live Demo Link](https://ruthmy.github.io/Leaderboard/dist/index.html)
+- [Live Demo Link](https://ruthmy.github.io/leaderboardProject/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
